@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+               text-align:center;
+               font-size: 50px;
+            }
+
+            body{
+                background-color: rgb(255, 138, 138);
+            }
+            #gallery{
+                display:flex;
+			    align-items: flex-start;
+
+            }
+
+            .image{
+                width:140px;
+                height: auto;
+			    opacity:0.7;
+                margin: 5px;
+                border-style: double;
+                border-color: rgb(255, 138, 138);
+            }
+
+            .image:hover{
+                opacity:1.0;
+            }
+
+            .image + p {
+                text-align:center;
+                visibility:hidden;
+            }
+
+            .image:hover + p{
+                visibility:visible;
+            }
+
+            #main{
+                margin-left:auto;
+                margin-right: auto;
+                width:700px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+        <h1><em>Menu</em></h1>
+        <div id="gallery">
+            <div class="img-container">
+                <img id="pom" class="image" src="img/pomegranate.jpg" alt="Pomegranate">
+                <p><strong>Pomegranate</strong></p>
+            </div><!--img-container-->
+
+            <div class="img-container">
+                <img id="salad" class="image" src="img/salad.jpg" alt="Greek Salad">
+                <p><strong>Greek Salad</strong></p>
+            </div><!--img-container-->
+
+            <div class="img-container">
+                <img id="dip" class="image" src="img/dip.jpg" alt="Spinach Artichoke Dip">
+                <p><strong>Spinach Artichoke Dip</strong></p>
+            </div><!--img-container-->
+
+            <div class="img-container">
+                <img id="soup" class="image" src="img/soup.jpg" alt="Minestrone Soup">
+                <p><strong>Minestrone Soup</strong></p>
+            </div><!--img-container-->
+
+            <div class="img-container">
+                <img id="chic" class="image" src="img/chicken.jpg" alt="Chicken Parmesan">
+                <p><strong>Chicken Parmesan</strong></p>
+            </div><!--img-container-->
+        </div><!--gallery-->
+        </div><!--main-->
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $('#pom').click(function(){
+
+		$('#pom').attr('src', 'img/pomegranate.jpg');
+        $('#pom').css('border-color', 'black');
+        $('#dip').css('border-color', 'rgb(255, 138, 138)');
+        $('#soup').css('border-color', 'rgb(255, 138, 138)');
+        $('#chic').css('border-color', 'rgb(255, 138, 138)');
+        $('#salad').css('border-color', 'rgb(255, 138, 138)');
+
+	})
+
+	$('#salad').click(function(){
+		$('#salad').attr('src', 'img/salad.jpg');
+        $('#salad').css('border-color', 'black');
+        $('#pom').css('border-color', 'rgb(255, 138, 138)');
+        $('#dip').css('border-color', 'rgb(255, 138, 138)');
+        $('#soup').css('border-color', 'rgb(255, 138, 138)');
+        $('#chic').css('border-color', 'rgb(255, 138, 138)');
+
+	})
+
+    $('#dip').click(function(){
+		$('#dip').attr('src', 'img/dip.jpg');
+        $('#dip').css('border-color', 'black');
+        $('#salad').css('border-color', 'rgb(255, 138, 138)');
+        $('#soup').css('border-color', 'rgb(255, 138, 138)');
+        $('#pom').css('border-color', 'rgb(255, 138, 138)');
+        $('#chic').css('border-color', 'rgb(255, 138, 138)');
+	})
+
+    $('#soup').click(function(){
+		$('#soup').attr('src', 'img/soup.jpg');
+        $('#soup').css('border-color', 'black');
+        $('#dip').css('border-color', 'rgb(255, 138, 138)');
+        $('#pom').css('border-color', 'rgb(255, 138, 138)');
+        $('#chic').css('border-color', 'rgb(255, 138, 138)');
+        $('#salad').css('border-color', 'rgb(255, 138, 138)');
+	})
+
+    $('#chic').click(function(){
+		$('#chic').attr('src', 'img/chicken.jpg');
+        $('#chic').css('border-color', 'black');
+        $('#soup').css('border-color', 'rgb(255, 138, 138)');
+        $('#salad').css('border-color', 'rgb(255, 138, 138)');
+        $('#dip').css('border-color', 'rgb(255, 138, 138)');
+        $('#pom').css('border-color', 'rgb(255, 138, 138)');
+
+	})
+
+
+
+</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. Evil and Mini Me</title>
+        <style>
+
+            h1{
+                text-align:center;
+                font-family:"Super Magic";
+                font-size: 3em;
+            }
+
+
+            @font-face{
+                font-family:"Super Magic";
+                src: url("font/SuperMagic.ttf")
+            }
+
+            #row{
+                display:flex;
+                flex-wrap:wrap;
+                width:600px;
+                height:auto;
+                margin-left:auto; 
+                margin-right:auto;
+            }
+
+            .flex-item{
+                width:200px;
+                height:auto;
+                margin:0px;
+            }
+
+            #move{
+                position: relative;
+                bottom: 10px;
+                left: 20px;
+                box-shadow: 0px 2px 0px 2px white
+
+            }
+
+            #move2{
+                position: relative;
+                bottom:10px;
+                left:15px;
+                box-shadow: 0px 0px 1px 1px white;
+
+
+            }
+
+            #move3{
+                position:relative;
+                bottom: 15px;
+                right:10px;
+                box-shadow: 0px 0px 1px 1px white;
+
+            }
+
+            #move4{
+                position: relative;
+                top:5px;
+                right:10px;
+                box-shadow:  2px 0px 0px 2px white;
+                margin-bottom: 5px;
+            }
+
+            /* #move5{
+                position: relative;
+                bottom:5px;
+                right:5px;
+            } */
+
+        </style>
+    </head>
+    
+
+    <body>
+        <h1>Dr. Evil and Mini Me Puzzle</h1>
+            <div id="row">
+                <img id="move5" class="flex-item" src="img/1.jpg" alt="first image">
+                <img class="flex-item" src="img/2.jpg" alt="second image"> 
+                <img id="move" class="flex-item" src="img/3.jpg" alt="third image">
+
+                <img id="move2" class="flex-item" src="img/4.jpg" alt="fourth image">
+                <img class="flex-item" src="img/5.jpg" alt="fifth image">
+                <img class="flex-item" src="img/6.jpg" alt="sixth image">
+            
+                <img id="move4" class="flex-item" src="img/7.jpg" alt="seventh image">
+                <img class="flex-item" src="img/8.jpg" alt="eigth image">
+                <img id="move3" class="flex-item" src="img/9.jpg" alt="nineth image">
+            </div><!--row-->
+            
+
+    </body>
+</html>

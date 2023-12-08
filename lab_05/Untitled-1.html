@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		body {
+			margin: 0px;
+		}
+		h1 {
+			margin: 0px;
+		}
+		#header {
+			background-size: cover;
+			background-position: center;
+			color: #000000;
+			font-size: 1.5em;
+			text-align: center;
+            Padding-bottom:50px;
+            padding-top:200px;
+			/*height: 300px;
+			line-height: 500px; */
+		}
+		#main {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+		}
+
+
+		.form-row{
+			margin:10px 0px;
+            display: flex;
+
+		}
+
+        .form-column{
+            width:150px;
+        }
+
+        #order{
+            background-color: rgb(65, 172, 106);
+        }
+
+        button{
+            border-radius:9px;
+            margin:5px;
+        }
+
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Starbucks Drink Order</h1>
+	</div> <!-- #header -->
+
+	<div id="main">
+
+		<form action="confirmation.html">
+			<div class="form-row">
+				<div class="form-column"><label for="name-id">Drink Name:</label></div>
+				<input type="text" id="name-id" placeholder="Iced Chai Latte">
+			</div>
+
+			<div class="form-row">
+				<div class="form-column"><label for="email-id">Order Name:</label></div>
+				<input type="email" id="email-id" placeholder="Nataisia">
+			</div>
+
+			<div class="form-row">
+				<div class="form-column"><label>Milk</label></div>
+				<label><input type="radio" name="student">Whole</label>
+				<label><input type="radio" name="student">Oat</label>
+				<label><input type="radio" name="student">Soy</label>
+				<label><input type="radio" name="student">Almond</label>
+			</div>
+
+			<div class="form-row">
+				<div class="form-column"><label>Toppings:</label></div>
+				<label><input type="checkbox">Sweet Foam</label>
+				<label><input type="checkbox">Caramel Drizzle</label>
+				<label><input type="checkbox">Chocolate Driizzle</label>
+				<label><input type="checkbox">Sprinkles</label>
+			</div>
+
+			<div class="form-row">
+				<div class="form-column"><label for="subject-id">Order Type:</label></div>
+				<select id="subject-id">
+					<option>--Select--</option>
+					<option>To-Go</option>
+					<option>Dine-In</option>
+					<option>Schedule Pick-up</option>
+				</select>
+
+			</div>
+
+			<div class="form-row">
+				<div class="form-column"><label for="message-id">Special Instructions:</label></div>
+				<textarea id="message-id" placeholder="Write your instructions here"></textarea>
+			</div>
+
+            <div>
+                <label><input type="checkbox">I Accept Terms & Conditions</label>
+            </div>
+
+			<div class="form-row">
+			<button id="order" type="submit">Order</button>
+			<button type="reset">Clear Order Here</button>
+			</div>
+		</form>
+	</div> <!-- #main -->
+
+</body>
+</html>
