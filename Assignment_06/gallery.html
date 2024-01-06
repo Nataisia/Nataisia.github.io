@@ -378,32 +378,42 @@
 
             }
 
-            /* #nav ul{
-                list-style:none;
-                margin:0px;
-                padding:0px;
-            }
- 
-            #nav > ul{
-                display:flex;
-                align-items:flex-start;
-            } 
-
-            #nav ul ul{
-                display:none;
-                position:absolute;
+            @media (max-width: 991px) { 
+            #header{
+                width: auto;
+                font-size: 40px;
             }
 
-            #nav li:hover > ul{
-                display: block;
+            #all{
+                width: auto;
+                width:fit-content;
+            }
             }
 
-            #nav ul li{
-                background-color: rgb(237, 185, 87); 
-                width:150px;
-                position:relative;
-                text-align:center;
-            } */
+            @media (max-width: 767px){
+                #header{
+                width: auto;
+                font-size: 20px;
+                }
+
+                #all{
+                width: auto;
+                width:fit-content;
+                flex-direction: column;
+
+            }
+            #flex_container{
+                width:fit-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #flex_container3{
+                width:fit-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            }
 
 
         </style>
@@ -442,17 +452,17 @@
             <div id="img1">
             <img src="img/snack.jpg" alt="snack">  
 				<div id="caption1">Rory and Lorelai eating snacks on the couch</div>
-            </div>
+            </div><!--img1-->
             
             <div id="img2">
                 <img src="img/sookie.jpg" alt="sookie">
                 <div id="caption2">Sookie and Jackson eating stawberries</div>
-            </div>
+            </div><!--img2-->
 
             <div id="img3">
                 <img id="harvard" src="img/harvard.jpg" alt="harvard">
                 <div id="caption3">Lorelai and Rory at Harvard</div>
-            </div>
+            </div><!--img3-->
             </div><!--flex_container-->
 
             <div id="flex_container2">
