@@ -31,9 +31,10 @@ h1{
 }
 
 #nav{
-    width:700px;
+    width:450px;
     margin-left:auto;
     margin-right:auto;
+    /* text-align: center; */
     display:flex;
 }
 
@@ -49,8 +50,35 @@ h1{
     align-items:flex-start;
 }
 
-#all{
-    width:1500px;
-    margin-left:auto;
-    margin-right: auto;
+#nav ul ul{
+    display:none;
+    position:absolute;
+}
+
+#nav li:hover > ul{
+    display: block;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1;
+}
+
+#nav ul li{ 
+    width:150px;
+    position:relative;
+    text-align:center;
+}
+
+#nav a:hover, #nav #active-nav{
+    border-bottom: 2px solid rgba(246,196,187,255);
+    background-color:rgba(246,196,187,255);
+    
+}
+
+#footer{
+    background-color: rgb(139, 159, 138);
+    text-align:center;
+    height: 80px;
+    font-size: 20px;
+    padding-top: 30px;
 }

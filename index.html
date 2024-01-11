@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <title>Nataisia Hambidge | Student Page</title>
@@ -119,4 +119,397 @@
             </div>
         </div>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nataisia Hambidge | Portfolio</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is my homepage for my portfolio. It includes an introduction for myself, a summary of my projects, and a place that has my contact info, linkedin, and github accounts.">
+	    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+        <link href="dist/locomotive-scroll.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <style>
+        #flex_container1{
+            height:500px;
+            padding-left:150px;
+            background-color: rgb(139, 159, 138);
+            padding-top: 150px;
+        }
+
+        #all{
+            width:1500px;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+        h2{
+            padding-top:100px;
+            font-size: 2em;
+            text-align: center;        
+        }
+
+        #about_me_content{
+            width: 550px;
+            font-size: 17px;
+        }
+
+        #me{
+            margin-left:850px;
+            margin-top: -400px;
+            width: 350px;
+            height: 350px;
+            position:relative;
+            overflow:hidden;
+            border-radius: 50%;
+        }
+
+        #container2{
+            height:700px;
+            padding-left:150px;
+            padding-bottom: 150px;
+        }
+
+        #p1{
+            margin-top:90px;
+            height:450px;
+            width:450px;
+            border-radius: 10%;
+        }
+
+        #upconnect_summary{
+            margin-left:250px;
+            width: 550px;
+            background-color: rgba(246,196,187,255);
+            padding: 30px;
+            padding-left: 500px;
+            padding-right: 50px;;
+            margin-top: -410px;
+            font-size: 1.2em;
+        }
+
+        #flex_container3{
+            height:600px;
+            background-color: rgb(139, 159, 138);
+            background-image: url('img/me.JPG');
+            border: none;
+        }
+
+        #p2{
+            margin-left:900px;
+            margin-top:80px;
+            margin-bottom: 100px;
+            height: 450px;
+            width: 450px;
+            border-radius: 10%;
+        }
+
+        #blackboard_summary{
+            width: 550px;
+            margin-top: -495px;
+            background-color: rgb(139, 159, 138);
+            padding:30px;
+            padding-left: 150px;
+            padding-right: 200px;
+            font-size: 1.2em;
+        }
+
+        .uc_button{
+            height: 25px;
+            width:90px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30%;
+            border:none;
+            padding:15px;
+            background-color: rgb(234, 191, 110);  
+        }
+
+        .button_container ul{
+            text-align: center;
+            color: black;
+            list-style: none;
+        }
+
+        #gallery{
+            display:flex;
+			align-items: flex-start;
+
+        }
+
+        #main{
+            margin-left:auto;
+            margin-right: auto;
+            width:1500px;
+        }
+
+        .image{
+            width:400px;
+            height: auto;
+            padding: 40px;
+        }
+
+        #book{
+            margin-top: 100px;
+            width: 500px;
+            height: 350px;
+        }
+
+        #top{
+            padding-top: 25px;
+            height: 50px;
+            width:190px;
+            text-align: center;
+            border-radius: 20%;
+            border: none;
+            background-color: rgb(234, 191, 110);  
+            font-size: 1.5em;
+            list-style:none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+        }
+
+@media (max-width: 991px) { 
+    #all, #nav, #about_me_content{
+		width: auto;
+        /* padding:auto; */
+	}
+
+    h1{
+        padding-top: 150px;
+    }
+
+    #nav ul {
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+    #flex_container1, #about_me_content, #about_me{
+        padding-right: 20px;
+        padding-left: 20px;
+        height:fit-content;
+        text-align: center;
+
+	}
+
+    #me{
+        margin:0px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    #UX, #container2{
+        padding-right: 20px;
+        padding-left: 20px;
+        height:fit-content;
+        text-align: center;
+    }
+
+    #upconnect_summary{
+        margin-top:50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width:fit-content;
+        margin-left: -20px;
+        margin-right:-20px;
+        height:fit-content;
+
+    }
+
+    h2, #flex_container3{
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    #p2{
+        margin:0px;
+    }
+
+    #blackboard_summary{
+        padding-right: 20px;
+        padding-left: 20px;
+        width:fit-content;
+        margin-left: -20px;
+        margin-right:-20px;
+        margin-top: 50px;
+    }
+
+    #main{
+        margin-top: 200px;
+        height:fit-content;
+        width:auto;
+    }
+
+    #gallery{
+	    flex-direction: column;
+    }
+
+    .img-container{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+
+    #mary{
+        padding-bottom: 120px;
+    }
+}
+
+
+@media (max-width: 767px){
+    #nav ul {
+		flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+    #navbar {
+		position: static;
+	} 
+
+
+    h1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <h1 id="h1">Hi, I'm Nataisia Hambidge. <br> Welcome to My Portfolio!</h1>
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                <li><a href="#flex_container1"><strong>About Me</strong></a>
+                    <ul>
+                <li><a href="#flex_container1"><strong>About Me</strong></a></li>
+
+                        <li><a href="#container2"><strong>Projects</strong></a></li>
+                    </ul>
+                </li>
+                        <li><a href="resume_cv.html"><strong>Resume/CV</strong></a></li>
+                        <li><a href="visual_designs.html"><strong>Visual Designs</strong></a></li>
+                </ul>
+            </div><!--nav-->
+        </div><!--navbar-->
+
+        <div id="all">
+            <div id="flex_container1">
+                <h3 id="about_me">About Me</h3>
+                <p id="about_me_content"> As an aspiring UX Designer 
+                    currently pursuing a Bachelor's degree in Cognitive Science 
+                    at the University of Southern California, I bring a wealth of
+                     hands-on experience from internships with Cyborg Mobile and 
+                     Microsoft. These opportunities allowed me to cultivate 
+                     expertise in design thinking, wireframing, and user research.
+                      Proficient in Figma, HTML, and CSS, I am committed to expanding 
+                      my technical skills through an upcoming front-end development 
+                      class where I'll delve into JavaScript. Concurrently working 
+                      towards a certificate in web development, my academic background 
+                      uniquely positions me to understand user behavior and cognitive 
+                      processes. Eager to contribute my diverse skill set to innovative
+                       projects, I am excited about the prospect of applying my passion 
+                       for UX design to a dynamic internship role, creating intuitive and 
+                       impactful digital experiences.</p>
+                <div>
+                    <img id="me" src="img/me.JPG" alt="image of something i like">
+                </div>
+            </div><!--flex_container1-->
+
+            <div id="container2">
+                <h2 id="UX">User Experience Design</h2>
+                <div>
+                    <img id="p1" src="img/uc.png" alt="first project">
+                </div>
+                <div id="upconnect_summary">
+                    <h4>UpConnect</h4>
+                    <p>Upconnect is a mentorship app developed to empower students by 
+                        connecting them with experienced industry professionals in their chosen fields. 
+                        Created during my New Technologist Internship, the platform serves as a user-friendly 
+                        interface, streamlined mentor matching, and a supportive community, 
+                        Upconnect aims to provide valuable insights and guidance for students to 
+                        advance their careers, creating a collaborative learning experience for
+                        the next generation of professionals.</p>
+                        <div class="button_container">
+                            <ul>
+                                <li class="uc_button"><a href="upconnect.html">Read More</a></li>
+                            </ul>
+                        </div><!--button container-->
+                </div><!--upconnect_summary-->
+            </div><!--container2-->
+
+            <div id="flex_container3">
+                <div>
+                    <img id="p2" src="img/bb.png" alt="second image">
+                </div>
+
+                <div id="blackboard_summary">
+                <h4>BlackBoard</h4>
+                <p>Enhancing accessibility for visually impaired students 
+                    on the Blackboard platform used by the University of Southern California. This involved remediating 
+                    content and optimizing the layout to ensure a more inclusive and user-friendly 
+                    experience. The goal was to make assignments and course content more accessible 
+                    for visually impaired students, thereby promoting equal opportunities for learning.</p>
+                <div class="button_container">
+                    <ul>
+                        <li class="uc_button"><a href="blackboard.html">Read More</a></li>
+                    </ul>
+                </div><!--button_container-->
+                </div><!--blackboard_summary-->
+            </div><!--flex_container3-->
+
+
+
+            <div class="button_container">
+                <ul>
+                    <li id="top"><a href="#h1">Back to Top</a></li>
+                </ul>
+            </div>
+        </div><!--all-->
+
+        <div id="footer" >
+            <p id="email"><a href="mailto:Nataisiah03@gmail.com"> Nataisiah03@gmail.com | (206)-413-0870 |</a><a href="https://www.linkedin.com/feed/" target="_blank"> LinkedIn</a></p>
+    </div><!--footer-->
+
+        <script src="relax/rellax.min.js"></script>
+
+	    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="lightbox/js/lightbox.min.js"></script>
+
+        <script src="smoothscroll/jquery.smoothscroll.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+
+
+        <script>
+            var rellax = new Rellax('#parallax-container > img');
+    
+            $('html').smoothScroll();
+        </script>
+
+    </body>
+
 </html>
